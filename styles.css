@@ -41,6 +41,135 @@ body {
     color: #dee205;
 }
 
+.sedini-box {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
+    color: rgb(0, 0, 0);
+    max-width: 1200px;
+    max-height: 800px;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.sedini-box h2 {
+    text-align: center;
+    color: #333;
+}
+
+.sedini-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.sedini-logo img {
+    width: 250px;
+    height: 250px;
+}
+
+.about-sedini {
+    padding: 0 20px 20px 20px;
+    margin: 0 25px;
+}
+
+.sedini-question {
+    background-color: rgba(102, 126, 234, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #667eea;
+    margin: 0 40px;
+    color: rgb(0, 0, 0);
+}
+
+.sedini-question h3 {
+    padding: 0 20px 20px 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sedini-question-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.sedini-question-options {
+    margin-left: 10px;
+}
+
+.sedini-complaint {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.sedini-complaint label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.sedini-complaint textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.sedini-submit {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-btn {
+    background-color: #667eea;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.content-title {
+    background-color: #667eea;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: flex-start;
+    width: fit-content;
+    margin-bottom: 0px;
+}
+
+.content-section h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    
+}
+
+.content-list {
+    list-style: none;
+}
+
+.content-list li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #667eea;
+    font-size: 1.2rem;
+}
+
 .login {
     display: flex;
     flex-direction: column;
@@ -91,5 +220,23 @@ body {
   font-size: 0.85rem;
   margin-bottom: 8px;
   height: 1em;
+}
+
+.conclusion-section {
+    background-color: rgba(102, 126, 234, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #667eea;
+    margin:0 40px ;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.audio-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 30px;
 }
 

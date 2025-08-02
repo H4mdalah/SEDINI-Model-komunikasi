@@ -7,3 +7,42 @@ const birthdate = localStorage.getItem("birthdate");
 if (nama && gender && birthdate) {
   document.getElementById("nama").textContent = nama;
 }
+
+// Saat form dikirim
+document.getElementById("myForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const formData = new FormData(this);
+  const jsonData = {};
+
+  // Tambahkan data dari halaman ini (jawaban q1 - q8 dan keluhan)
+  formData.forEach((value, key) => {
+    jsonData[key] = value;
+  });
+
+  // Gabungkan data dari localStorage
+  jsonData["nama"] = nama;
+  jsonData["gender"] = gender;
+  jsonData["birthDate"] = birthdate;
+
+  // Kirim data ke Apps Script
+  fetch("https://script.google.com/macros/s/AKfycbwSJu0a9A3mmBYbnQCN6jTEsggqRPQsnffafHpxFJ7O_RwdTYOQXBAClo00wQUTcLRnoA/exec", {
+    method: "POST",
+    body: JSON.stringify(jsonData),
+    mode: "no-cors",
+    credentials: "include",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  })
+  .then(() => {
+    alert("Data berhasil dikirim!");
+    localStorage.clear();
+    window.location.href = "index.html";
+  })
+  .catch((err) => {
+    console.error("Error:", err);
+    alert("Terjadi kesalahan saat mengirim data.");
+  });
+});
+
