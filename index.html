@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEDINI</title>
+    <link rel="stylesheet" href="styles.css" />
+
+  </head>
+  <body>
+    <div class="container">
+    <div class="header">
+        <h1>Program Edukasi SEDINI</h1>
+    </div>
+    <form class="login" id="loginForm" novalidate>
+      <h2>Masuk ke Program Edukasi</h2>
+
+      <h4>Nama Lengkap</h4>
+      <input type="text" id="nama" placeholder="Masukkan Nama" />
+      <small class="error" id="error-nama"></small>
+
+      <h4>Jenis Kelamin</h4>
+      <input type="text" id="gender" placeholder="Masukkan Jenis Kelamin" />
+      <small class="error" id="error-gender"></small>
+
+      <h4>Tanggal Lahir</h4>
+      <input type="date" id="birth-date" placeholder="Masukkan Tanggal Lahir" />
+      <small class="error" id="error-birth-date"></small>
+
+      <button type="submit">Masuk Ke Program</button>
+    </form>
+
+      <!-- <div class="login">
+        <h2>Masuk ke Program Edukasi</h2>
+        <h4>Nama Lengkap</h4>
+        <input type="text" id="nama" placeholder="Masukkan Nama" required/>
+        <h4>Jenis Kelamin</h4>
+        <input type="text" id="gender" placeholder="Masukkan Jenis Kelamin" required/>
+        <h4>Tanggal Lahir</h4>
+        <input type="date" id="date" placeholder="Masukkan Tempat Tanggal Lahir" required/>
+
+        <button type="submit" onclick="return validateForm()">Masuk Ke Program</button>
+      </div> -->
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
