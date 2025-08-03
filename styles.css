@@ -215,6 +215,14 @@ body {
     background: linear-gradient(135deg, rgb(102, 126, 234) 0%, rgb(118, 75, 162) 100%);
 }
 
+.select-gender {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 .error {
   color: red;
   font-size: 0.85rem;

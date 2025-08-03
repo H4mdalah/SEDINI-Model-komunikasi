@@ -9,18 +9,26 @@
   </head>
   <body>
     <div class="container">
+
+    <div class="sedini-logo">
+        <img src="images/logo-nobg.png" alt="SEDINI Logo">
+    </div>
     <div class="header">
-        <h1>Program Edukasi SEDINI</h1>
+        <h1>Program SEDINI</h1>
     </div>
     <form class="login" id="loginForm" novalidate>
-      <h2>Masuk ke Program Edukasi</h2>
+      <h2>Masuk ke Program</h2>
 
       <h4>Nama Lengkap</h4>
       <input type="text" id="nama" placeholder="Masukkan Nama" />
       <small class="error" id="error-nama"></small>
 
       <h4>Jenis Kelamin</h4>
-      <input type="text" id="gender" placeholder="Masukkan Jenis Kelamin" />
+      <select class="select-gender" id="gender">
+        <option value="">Pilih Jenis Kelamin</option>
+        <option value="Laki-Laki">Laki-Laki</option>
+        <option value="Perempuan">Perempuan</option>
+      </select>
       <small class="error" id="error-gender"></small>
 
       <h4>Tanggal Lahir</h4>
