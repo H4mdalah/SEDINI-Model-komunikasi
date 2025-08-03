@@ -26,7 +26,7 @@ document.getElementById("myForm").addEventListener("submit", function (e) {
   jsonData["birthDate"] = birthdate;
 
   // Kirim data ke Apps Script
-  fetch("https://script.google.com/macros/s/AKfycbwSJu0a9A3mmBYbnQCN6jTEsggqRPQsnffafHpxFJ7O_RwdTYOQXBAClo00wQUTcLRnoA/exec", {
+  fetch("https://script.google.com/macros/s/AKfycbzFl2KSfEGEOsVrDDcGqDdAbyl7pxVDU5VpI3h4daWxDUguMdCY8rK1sjYMIa3kX83EkQ/exec", {
     method: "POST",
     body: JSON.stringify(jsonData),
     mode: "no-cors",
